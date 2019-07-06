@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>HELLO</h1>
+    <ul>
+      {% for todoItems in all_items %}
+      <li>{{ todoItem.content }}</li>
+    </ul>
+    {% endfor %}
+
+    <form class="" action="/addTodo/" method="post">
+      {% csrf_token %}
+      <input type="text" name="" value="content">
+      <input type="submit" name="" value="ADD">
+    </form>
+  </body>
+</html>
